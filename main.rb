@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 require './window'
 
-Window.new ARGV.shift
+Window::create ARGV.shift
 Tk.mainloop

@@ -2,8 +2,8 @@
 require './image'
 require './canvas'
 
-class Window # ダサい
-  def initialize(filename)
+module Window # ダサい
+  def create(filename)
     TkRoot.new do |root|
       images = Image.new filename
       title filename
@@ -13,6 +13,7 @@ class Window # ダサい
       Canvas.new self, images.columns, images.rows, images.name
     end
   end
+  module_function :create
 end
 
 =begin
