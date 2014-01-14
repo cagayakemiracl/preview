@@ -2,4 +2,3 @@
 require './window'
 
 Window::create ARGV.shift
-Tk.mainloop

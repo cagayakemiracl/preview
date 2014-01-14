@@ -24,7 +24,7 @@ class Image < Magick::ImageList
     top     = (height / 2 - rows     / 2).to_s
     @geometry = columns.to_s + 'x' + rows.to_s + '+' + left + '+' + top
     @name = (Tempfile.open ['png32:resize', '.png']).path
-    
+
     write @name
   end
 end

@@ -12,7 +12,10 @@ module Window # ダサい
       attributes 'topmost', 1
       Canvas.new self, images.columns, images.rows, images.name
     end
+
+    Tk.mainloop
   end
+
   module_function :create
 end
 
