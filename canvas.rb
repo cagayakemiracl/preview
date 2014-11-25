@@ -6,7 +6,7 @@ class Canvas < TkCanvas
     width columns
     height rows
     TkcImage.new self, columns / 2, rows / 2 do
-      image TkPhotoImage.new :file => name
+      image TkPhotoImage.new file: name
     end
     pack
   end
