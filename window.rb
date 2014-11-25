@@ -9,7 +9,7 @@ module Window # bad
       title filename
       geometry images.geometry
       resizable 0, 0
-      attributes 'topmost', 1
+      attributes :topmost, 1
       Canvas.new self, images.columns, images.rows, images.name
     end
 
